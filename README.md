@@ -45,11 +45,11 @@ The filters are split into 3 groups, only allowing each group to see the groups 
 
 **Conditional PixelCNN:**
 
-A **class-conditional** PixelCNN implementation on binary MNIST. Condition on a class label by adding a conditional bias in each convolutional layer. More precisely, in the $\ell$th convolutional layer, compute: 
+A **class-conditional** PixelCNN implementation on binary MNIST. Condition on a class label by adding a conditional bias in each convolutional layer. More precisely, in the <img src="https://render.githubusercontent.com/render/math?math=\ell">th convolutional layer, compute: 
 
-<img src="https://render.githubusercontent.com/render/math?math=W_\ell * x + b_\ell + V_\ell y">,
+<img src="https://render.githubusercontent.com/render/math?math=W_\ell * x %2B b_\ell %2B V_\ell y">,
 
-where <img src="https://render.githubusercontent.com/render/math?math=W_\ell * x + b_\ell"> is a masked convolution (as in previous parts), <img src="https://render.githubusercontent.com/render/math?math=V"> is a 2D weight matrix, and <img src="https://render.githubusercontent.com/render/math?math=y"> is a one-hot encoding of the class label (where the conditional bias is broadcasted spacially and added channel-wise).
+where <img src="https://render.githubusercontent.com/render/math?math=W_\ell * x %2B b_\ell"> is a masked convolution (as in previous parts), <img src="https://render.githubusercontent.com/render/math?math=V"> is a 2D weight matrix, and <img src="https://render.githubusercontent.com/render/math?math=y"> is a one-hot encoding of the class label (where the conditional bias is broadcasted spacially and added channel-wise).
 
 
 ## Datasets
